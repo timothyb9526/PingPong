@@ -5,7 +5,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 img {
@@ -19,28 +19,36 @@ img {
     margin-top: 10rem;
     border: 5px solid black;
 }
-.form-div form {
-    margin-left: 12rem;
-}
 .register {
     display: none;
+    padding-left: 15rem;
+    background-color: darkgray;
+    border-radius: 20px;
+    width: 50rem;
 }
 .login {
     display: none;
+    padding-left: 15rem;
+    background-color: darkgray;
+    border-radius: 20px;
+    width: 50rem;
 }
 #table div {
+    width: 30rem;
     border: 10px solid white;
     margin-top: 0rem;
     margin-right: 0rem;
 }
 #table {
     text-align: center;
-    width: 25rem;
-    height: 10rem;
+    width: 50rem;
+    height: 20rem;
     background-color: rgb(27, 27, 250);
 }
 #profile {
     display: none;
+    padding-top: 5rem;
+    padding-left: 10rem;
     margin-top: 5rem;
 }
 #player1 {
@@ -48,4 +56,17 @@ img {
 }
 #player2 {
     padding-top: 2rem;
+}
+#profile button {
+    font-size: 10rem;
+    background-color: silver;
+    width: 20rem;
+    height: 14rem;
+}
+.navbar div button {
+    background-color: transparent;
+    border: none;
+}
+form button {
+    border-radius: 20px;
 }
