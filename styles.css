@@ -1,0 +1,51 @@
+body {
+    background-image: url("pictures/ping_pong.jpg");
+    background-color: black;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+img {
+    margin-left: 30rem;
+    margin-top: 10rem;
+}
+
+.form-div {
+    margin-left: 25rem;
+    width: 40rem;
+    margin-top: 10rem;
+    border: 5px solid black;
+}
+.form-div form {
+    margin-left: 12rem;
+}
+.register {
+    display: none;
+}
+.login {
+    display: none;
+}
+#table div {
+    border: 10px solid white;
+    margin-top: 0rem;
+    margin-right: 0rem;
+}
+#table {
+    text-align: center;
+    width: 25rem;
+    height: 10rem;
+    background-color: rgb(27, 27, 250);
+}
+#profile {
+    display: none;
+    margin-top: 5rem;
+}
+#player1 {
+    padding-top: 2rem;
+}
+#player2 {
+    padding-top: 2rem;
+}
