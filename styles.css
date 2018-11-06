@@ -8,12 +8,8 @@ body {
     background-size: cover;
 }
 
-img {
-    margin-left: 30rem;
-    margin-top: 10rem;
-}
-
 .form-div {
+    display: none;
     margin-left: 25rem;
     width: 40rem;
     margin-top: 10rem;
@@ -27,7 +23,6 @@ img {
     width: 50rem;
 }
 .login {
-    display: none;
     padding-left: 15rem;
     background-color: darkgray;
     border-radius: 20px;
@@ -51,9 +46,7 @@ img {
     padding-left: 10rem;
     margin-top: 5rem;
 }
-#player1 {
-    padding-top: 2rem;
-}
+#player1,
 #player2 {
     padding-top: 2rem;
 }
@@ -63,10 +56,73 @@ img {
     width: 20rem;
     height: 14rem;
 }
-.navbar div button {
+/* .navbar div button {
+    color: white;
     background-color: transparent;
     border: none;
-}
+} */
 form button {
     border-radius: 20px;
+}
+/* .navbar-brand {
+    color: white;
+}
+.navbar-brand:hover {
+    color: rgba(192, 192, 192, 0.548);
+} */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    text-align: center;
+    background-color: #585353;
+    font-size: 2rem;
+    color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 50rem;
+    width: 95%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: black;
+    cursor: pointer;
+}
+#main-content {
+    margin-top: 18rem;
+    margin-left: 22rem;
+}
+#register,
+#login {
+    margin-top: 2rem;
+    background-color: rgb(93, 25, 170);
+    border-radius: 20px;
+    width: 50rem;
+    height: 5rem;
+}
+.invalid {
+    border-color: red;
+}
+#invalid {
+    display: none;
+    color: red;
 }
