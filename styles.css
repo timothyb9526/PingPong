@@ -123,6 +123,5 @@ form button {
     border-color: red;
 }
 #invalid {
-    display: none;
     color: red;
 }

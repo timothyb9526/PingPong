@@ -14,7 +14,7 @@
     <!-- <nav class="navbar bg-dark">
         <a href="index.html" class="navbar-brand">Home</a>
         <div>
-            <button class="text-white" id="register">Register</button>
+            <button class="text-whitemargin-left: 25rem;" id="register">Register</button>
             <button class="text-white" id="login">Login</button>
         </div>
 
@@ -29,37 +29,19 @@
         <div id="table" class="d-flex">
             <div id="player1">
                 <button id="score-1" class="btn btn-lg"></button>
-                <select name="users" id="users">
-                    <option selected></option>
-                    <option>Cody</option>
-                    <option>Myeshia</option>
-                    <option>Logan</option>
-                    <option>Timothy</option>
-                    <option>Ray</option>
-                    <option>John</option>
-                    <option>Henry</option>
-                    <option>Cole</option>
-                    <option>Ginger</option>
-                    <option>Matthew</option>
-                    <option>Danny</option>
-                </select>
+                <input type="text" name="user" class="player1" list="usernames">
+
+                <datalist id="usernames">
+
+                </datalist>
             </div>
             <div id="player2">
                 <button id="score-2" class="btn btn-lg"></button>
-                <select name="users" id="users">
-                    <option selected></option>
-                    <option>Cody</option>
-                    <option>Myeshia</option>
-                    <option>Logan</option>
-                    <option>Timothy</option>
-                    <option>Ray</option>
-                    <option>John</option>
-                    <option>Henry</option>
-                    <option>Cole</option>
-                    <option>Ginger</option>
-                    <option>Matthew</option>
-                    <option>Danny</option>
-                </select>
+                <input type="text" name="user" class="player2" list="usernames">
+
+                <datalist id="usernames">
+
+                </datalist>
             </div>
         </div>
         <div id="myModal" class="modal">
@@ -76,15 +58,16 @@
                 <div class="col-md-6 pt-5">
                     <div class="form-group">
                         <label for="name">username:</label>
-                        <input type="text" id="name" class="form-control" required="required">
+                        <input type="text" id="name" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="code">password:</label>
-                        <input type="text" id="code" class="form-control" required="required">
+                        <input type="text" id="code" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="code_repeat">password_repeat:</label>
-                        <input type="text" id="code_repeat" class="form-control" required="required">
+                        <input type="text" id="code_repeat" class="form-control" required>
+                        <p id="notAvailable"></p>
                     </div>
                     <button type="submit" class="register-btn btn-primary">Register</button>
                     <a href="index.html">Cancel</a>
@@ -98,13 +81,12 @@
                 <div class="col-md-6 pt-5">
                     <div class="form-group">
                         <label for="username">username:</label>
-                        <input type="text" id="username" class="form-control" required="required">
-                        <p id="invalid">Something Went Wrong Please Try Again</p>
+                        <input type="text" id="username" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="password">password:</label>
-                        <input type="text" id="password" class="form-control" required="required">
-                        <p id="invalid">Something Went Wrong Please Try Again</p>
+                        <input type="text" id="password" class="form-control">
+                        <p id="invalid"></p>
                     </div>
                     <button type="submit" class="login-btn btn-primary">Login</button>
                     <a href="index.html">Cancel</a>
