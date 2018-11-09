@@ -1,11 +1,29 @@
 body {
     background-image: url("pictures/ping_pong.jpg");
     background-color: black;
-    height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#logout {
+    display: none;
+    margin-left: 33rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    border: 2px solid white;
+    background-color: rgb(121, 121, 121);
+    border-radius: 20px;
+    width: 30rem;
+    height: 4rem;
+    color: black;
+}
+#user1,
+#user2 {
+    font-size: 2rem;
+    color: white;
 }
 
 .form-div {
@@ -29,32 +47,45 @@ body {
     width: 50rem;
 }
 #table div {
-    width: 30rem;
+    background-color: rgb(27, 27, 250);
     border: 10px solid white;
     margin-top: 0rem;
     margin-right: 0rem;
+    width: 100%;
+}
+.game {
+    display: none;
+}
+#table button {
+    font-size: 10rem;
+    width: 20rem;
+    height: 15rem;
+    margin-top: 0.2rem;
+    border: 5px solid black;
 }
 #table {
+    margin-top: 10rem;
     text-align: center;
-    width: 50rem;
-    height: 20rem;
     background-color: rgb(27, 27, 250);
-}
-#profile {
-    display: none;
-    padding-top: 5rem;
-    padding-left: 10rem;
-    margin-top: 5rem;
 }
 #player1,
 #player2 {
     padding-top: 2rem;
 }
+
 #profile button {
-    font-size: 10rem;
     background-color: silver;
-    width: 20rem;
-    height: 14rem;
+    color: black;
+}
+#profile {
+    display: none;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    margin-top: 5rem;
+    text-align: center;
+    border: 5px solid black;
+    font-size: 2rem;
+    background-color: rgb(129, 129, 129);
 }
 /* .navbar div button {
     color: white;
@@ -98,9 +129,9 @@ form button {
 
 .close {
     color: #aaa;
-    float: right;
     font-size: 5rem;
     font-weight: bold;
+    
 }
 
 .close:hover {
